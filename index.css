@@ -1,3 +1,38 @@
-#heading{
-    color:red;
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo {
+    width:100px;
+}
+.nav-items>ul{
+    display: flex;
+}
+.nav-items>ul>li{
+    padding: 10px;
+    margin: 10px;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+.res-card{
+    padding: 5px;
+    margin: 5px;
+    width:158px;
+    /* height: 350px; */
+    background-color:aliceblue;
+}
+.res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.search{
+    padding: 10px;
+}
+.res-logo{
+    width: 148px;
+    height: 120px;
 }
