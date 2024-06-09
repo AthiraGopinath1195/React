@@ -32,11 +32,28 @@
 }
 .filter{
     padding: 10px;
+    display: flex;
 }
 .filter-btn{
+    margin: 0 10px;
     cursor: pointer;
 }
 .res-logo{
     width: 148px;
     height: 120px;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+    background-color:aliceblue;
+    border-width: 1px;
+}
+.btn{
+    padding: 0 5px;
+    margin: 5px;
 }
