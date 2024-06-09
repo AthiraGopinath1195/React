@@ -108,7 +108,7 @@ export default Restaurant=[
         "Bakery",
         "Ice Cream"
       ],
-      "avgRating": 4.6,
+      "avgRating": 3.6,
       "parentId": "195515",
       "avgRatingString": "4.6",
       "totalRatingsString": "20+",

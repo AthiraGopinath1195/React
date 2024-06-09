@@ -8,6 +8,7 @@
 }
 .nav-items>ul{
     display: flex;
+    list-style: none;
 }
 .nav-items>ul>li{
     padding: 10px;
@@ -29,8 +30,11 @@
     cursor: pointer;
     border: 1px solid black;
 }
-.search{
+.filter{
     padding: 10px;
+}
+.filter-btn{
+    cursor: pointer;
 }
 .res-logo{
     width: 148px;
