@@ -5,6 +5,7 @@ const Error = () => {
 
     return(
         <div>
+            <h1>Error</h1>
             <h1>{err?.status}:{err.statusText}</h1>
             <h4>{err?.data}</h4>
         </div>
