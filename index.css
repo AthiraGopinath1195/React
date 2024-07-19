@@ -10,7 +10,7 @@
     display: flex;
     list-style: none;
 }
-.nav-items>ul>li{
+.nav-link{
     padding: 10px;
     margin: 10px;
 }
@@ -55,4 +55,8 @@
 .btn{
     padding: 0 5px;
     margin: 5px;
+}
+.user-card{
+    padding: 10px;
+    border: 1px solid black;
 }
