@@ -4,18 +4,30 @@ class UserClass extends React.Component {
     constructor(props){
         super(props);
         this.state={
-            count:0
+            count:0,
+            userInfo:{
+                name:"Dummy",
+                location:'Default',
+                url:"https://dummyurl.com"
+            }
         }
     }
 
     async componentDidMount(){
         const data = await fetch("https://api.github.com/users/athiragopinath1195")
-        const json = data.json()
-        console.log(json)
+        const json = await data.json()
+        console.log("----------------->>>",json)
+        this.setState({
+            userInfo:{
+                name:json.login,
+                location:json.location,
+                url:json.avatar_url
+            }
+        })
     }
 
     render(){
-        const {name,location,contact}=this.props;
+        const {name,location,url}=this.state.userInfo;
         return (
             <div className="user-card">
                 <h4>Count:{this.state.count}</h4>
@@ -24,9 +36,11 @@ class UserClass extends React.Component {
                         count:this.state.count+1
                     })
                 }}>Increment count</button>
+                <div style={{marginTop:10,marginBottom:10}}>
+                    <img src={url} alt={"test"} style={{borderRadius:50,height:100}}/>
+                </div>
                 <h2>Name:{name}</h2>
                 <h3>Location:{location}</h3>
-                <h4>Contact:{contact}</h4>
             </div>
         )
     }
